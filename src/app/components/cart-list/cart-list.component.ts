@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
-
 import { CartService } from '../../services/cart.service';
 import { CartItemComponent } from "../cart-item/cart-item.component";
 

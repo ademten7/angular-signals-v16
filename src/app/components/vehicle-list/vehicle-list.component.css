@@ -1,0 +1,10 @@
+.card{
+    display: flex;
+    
+}
+.list-vehicle{
+    display: flex;
+}
+.list-group-item{
+    background-color: blue;
+}

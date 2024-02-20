@@ -35,15 +35,21 @@
       <div class="col-md-6">{{vehicle()?.cargo_capacity}}</div>
     </div>
 
-    <div class="row"
-         *ngIf="vehicleFilms()">
-      <div class="col-md-3">Films:</div>
+    <div class="row">
+         @if(vehicleFilms()){
+          <div class="col-md-3">Films:</div>
       <div class="col-md-6">
         <ul class="list-group">
-          <li class="list-group-item"
-              *ngFor="let film of vehicleFilms()">{{film.title}}</li>
+          <li class="list-group-item">
+          @for(film of vehicleFilms(); track film){
+           Title: {{film.title}}
+          }
+             </li>
         </ul>
       </div>
+
+         }
+      
     </div>
 
   </div>

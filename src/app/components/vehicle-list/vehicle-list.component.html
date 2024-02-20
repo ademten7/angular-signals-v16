@@ -1,4 +1,5 @@
 <div class="card">
+  <div>
     <div class="card-header">
       {{pageTitle}}
     </div>
@@ -24,10 +25,13 @@
       {{errorMessage }}
     </div>
   </div>
-  <div>
+  <div class="list-vehicle">
     <app-cart-list></app-cart-list> 
-   
+    <div>
+      <app-cart-total></app-cart-total>
+    </div>
 </div>
-<div>
-    <app-cart-total></app-cart-total>
-</div>
+  </div>
+
+  
+

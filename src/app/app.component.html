@@ -17,9 +17,11 @@
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/welcome">Welcome</a>
           </li>
+          <nz-badge [nzCount]="cartCount()">
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/cart">Cart</a>
           </li>
+        </nz-badge>
         </ul>
       </li>
       <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
